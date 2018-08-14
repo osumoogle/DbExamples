@@ -3,9 +3,9 @@ using CodeFirst.Model;
 
 namespace CodeFirst
 {
-    public class DataContext : DbContext
+    public class CodeFirstDataContext : DbContext
     {
-        public DataContext() : base("codeFirst")
+        public CodeFirstDataContext() : base("codeFirst")
         {
             
         }

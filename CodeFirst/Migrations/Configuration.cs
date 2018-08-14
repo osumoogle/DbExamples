@@ -6,14 +6,14 @@ namespace CodeFirst.Migrations
     using System;
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CodeFirst.DataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CodeFirst.CodeFirstDataContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(CodeFirst.DataContext context)
+        protected override void Seed(CodeFirst.CodeFirstDataContext context)
         {
             if (context.Users.Any(u => u.UserName == "tony@starklabs.us"))
                 return;

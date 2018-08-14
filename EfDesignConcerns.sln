@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirst", "CodeFirst\Code
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DbFirst", "DbFirst\DbFirst.sqlproj", "{4BEF3106-2D94-405F-A66F-F4638648267D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbFirstContext", "DbFirstContext\DbFirstContext.csproj", "{24B97460-3B49-45DA-A0F8-5CAD1C75AD5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{0507B598-DB17-4A1D-841A-50A8FFEEEC3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{4BEF3106-2D94-405F-A66F-F4638648267D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BEF3106-2D94-405F-A66F-F4638648267D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4BEF3106-2D94-405F-A66F-F4638648267D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{24B97460-3B49-45DA-A0F8-5CAD1C75AD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B97460-3B49-45DA-A0F8-5CAD1C75AD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B97460-3B49-45DA-A0F8-5CAD1C75AD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B97460-3B49-45DA-A0F8-5CAD1C75AD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0507B598-DB17-4A1D-841A-50A8FFEEEC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0507B598-DB17-4A1D-841A-50A8FFEEEC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0507B598-DB17-4A1D-841A-50A8FFEEEC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0507B598-DB17-4A1D-841A-50A8FFEEEC3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
