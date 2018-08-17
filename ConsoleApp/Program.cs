@@ -19,9 +19,11 @@ namespace ConsoleApp
 
             using (var dbFirstContext = new DbFirstEntities())
             {
-                var dbfMessages = dbFirstContext.Messages.Include(m => m.Users);
+                var dbfMessages = dbFirstContext.Messages.Include(m => m.User);
                 Console.WriteLine(dbfMessages.ToList().Count);
             }
+
+            Console.ReadLine();
         }
     }
 }

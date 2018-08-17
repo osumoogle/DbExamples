@@ -14,19 +14,13 @@ namespace DbFirstContext
     
     public partial class Message
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Message()
-        {
-            this.Users = new HashSet<User>();
-        }
-    
         public System.Guid Id { get; set; }
         public string From { get; set; }
         public string To { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
+        public System.Guid UserId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> Users { get; set; }
+        public virtual User User { get; set; }
     }
 }

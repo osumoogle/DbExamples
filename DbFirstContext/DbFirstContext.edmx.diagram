@@ -7,7 +7,9 @@
       <Diagram DiagramId="8ff60dc6714a4a77aba68918696150d1" Name="Diagram1">
         <EntityTypeShape EntityType="DbFirstModel.Message" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DbFirstModel.User" Width="1.5" PointX="4" PointY="0.625" IsExpanded="true" />
-        <AssociationConnector Association="DbFirstModel.UserMessages" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbFirstModel.Role" Width="1.5" PointX="6.625" PointY="1" />
+        <AssociationConnector Association="DbFirstModel.FK_Messages_Users" />
+        <AssociationConnector Association="DbFirstModel.UserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

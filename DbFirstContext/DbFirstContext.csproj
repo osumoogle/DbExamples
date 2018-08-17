@@ -68,6 +68,9 @@
       <DependentUpon>DbFirstContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>DbFirstContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>DbFirstContext.tt</DependentUpon>
     </Compile>
