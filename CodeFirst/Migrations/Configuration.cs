@@ -15,6 +15,26 @@ namespace CodeFirst.Migrations
 
         protected override void Seed(CodeFirst.CodeFirstDataContext context)
         {
+            var userRole = new Role
+            {
+                Id = Guid.NewGuid(),
+                Name = "User"
+            };
+            var adminRole = new Role
+            {
+                Id = Guid.NewGuid(),
+                Name = "Admin"
+            };
+            if (!context.Roles.Any())
+            {
+                context.Roles.Add(userRole);
+                context.Roles.Add(adminRole);
+            }
+            else
+            {
+                userRole = context.Roles.First(r =>r.Name == "User");
+                adminRole = context.Roles.First(r => r.Name == "Admin");
+            }
             if (context.Users.Any(u => u.UserName == "tony@starklabs.us"))
                 return;
 
@@ -34,6 +54,10 @@ namespace CodeFirst.Migrations
             };
 
             context.Users.Add(tony);
+            context.UserRoles.Add(new UserRole {UserId = tony.Id, RoleId = userRole.Id});
+            context.UserRoles.Add(new UserRole {UserId = tony.Id, RoleId = adminRole.Id});
+            context.UserRoles.Add(new UserRole {UserId = pepper.Id, RoleId = userRole.Id});
+
 
             context.Messages.Add(new Message
             {

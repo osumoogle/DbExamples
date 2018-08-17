@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace CodeFirst.Model
 {
     public class Message
     {
+        [Key]
         public Guid Id { get; set; }
 
         public Guid UserId { get; set; }
